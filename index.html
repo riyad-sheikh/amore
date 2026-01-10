@@ -269,10 +269,10 @@
     </script>
 
     <section class="relative w-full h-[30vh] md:h-[50vh] overflow-hidden mt-[60px]">
-        <div id="slides" class="relative w-full h-full">
+        <div id="slides" class=" w-full h-full">
 
             <!-- Slide 1 -->
-            <div class="absolute inset-0 bg-cover bg-center hidden"
+            <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url('images/newBanner1.jpeg');"
                 data-animation="fade-in">
                 <div class="w-full h-full bg-black bg-opacity-50 flex items-center justify-center px-4 text-center">
@@ -291,65 +291,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="absolute inset-0 bg-cover bg-center hidden"
-                style="background-image: url('images/newBanner1.jpeg');"
-                data-animation="slide-in">
-                <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center px-4 text-center">
-                    <div class="text-white max-w-xl">
-                        <h2 class="text-3xl md:text-5xl font-bold mb-4"
-                            data-en="Juicy Grilled"
-                            data-bn="রসালো গ্রিলড">
-                            Juicy Grilled
-                        </h2>
-                        <a href="#menu"
-                        class="bg-red-600 hover:bg-red-700 px-6 py-3 text-white rounded-lg font-medium text-sm md:text-base"
-                        data-en="Order Now"
-                        data-bn="এখনই অর্ডার করুন">
-                            Order Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="absolute inset-0 bg-cover bg-center hidden"
-                style="background-image: url('images/newBanner1.jpeg');"
-                data-animation="zoom-in">
-                <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center px-4 text-center">
-                    <div class="text-white max-w-xl">
-                        <h2 class="text-3xl md:text-5xl font-bold mb-4"
-                            data-en="Italian Pasta Magic"
-                            data-bn="ইতালিয়ান পাস্তার জাদু">
-                            Italian Pasta Magic
-                        </h2>
-                        <a href="#menu"
-                        class="bg-red-600 hover:bg-red-700 px-6 py-3 text-white rounded-lg font-medium text-sm md:text-base"
-                        data-en="Try It"
-                        data-bn="চেষ্টা করুন">
-                            Try It
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <!-- Controls (icons stay same, no translation needed) -->
-        <button onclick="prevSlide()"
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 md:p-3 rounded-full shadow hover:bg-gray-200 z-10 text-xl">
-            ❮
-        </button>
-
-        <button onclick="nextSlide()"
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 md:p-3 rounded-full shadow hover:bg-gray-200 z-10 text-xl">
-            ❯
-        </button>
     </section>
 
 
     <!-- JavaScript Slider Logic -->
-    <script>
+    <!-- <script>
         const slides = document.querySelectorAll('#slides > div');
         let current = 0;
 
@@ -380,7 +327,7 @@
 
         // Initial load
         showSlide(current);
-    </script>
+    </script> -->
 
 
 
@@ -823,82 +770,7 @@
 
 
 
-        <section class="py-16 bg-gray-100">
-            <div class="max-w-5xl mx-auto px-4">
-                <h2 data-en="What NEW?" data-bn="নতুন কী?" class="text-4xl font-extrabold text-center text-gray-800 mb-12">
-                    What NEW?
-                </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                    <!-- New Item 1 -->
-                    <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-                        <h3 data-en="Seasonal Menu Launch" data-bn="মৌসুমী মেনু লঞ্চ" class="text-xl font-semibold mb-3 text-red-600">
-                            Seasonal Menu Launch
-                        </h3>
-                        <p data-en="Introducing our fresh seasonal menu with organic ingredients and exciting new flavors." 
-                        data-bn="জৈব উপাদান এবং নতুন স্বাদের সঙ্গে আমাদের নতুন মৌসুমী মেনু পরিচয় করানো হচ্ছে।"
-                        class="text-gray-700 text-sm">
-                            Introducing our fresh seasonal menu with organic ingredients and exciting new flavors.
-                        </p>
-                    </div>
-
-                    <!-- New Item 2 -->
-                    <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-                        <h3 data-en="Live Music Nights" data-bn="লাইভ মিউজিক নাইট" class="text-xl font-semibold mb-3 text-red-600">
-                            Live Music Nights
-                        </h3>
-                        <p data-en="Enjoy live performances every Friday and Saturday to enhance your dining experience." 
-                        data-bn="আপনার ডাইনিং অভিজ্ঞতা বাড়ানোর জন্য প্রতি শুক্রবার ও শনিবার লাইভ পারফরম্যান্স উপভোগ করুন।"
-                        class="text-gray-700 text-sm">
-                            Enjoy live performances every Friday and Saturday to enhance your dining experience.
-                        </p>
-                    </div>
-
-                    <!-- New Item 3 -->
-                    <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-                        <h3 data-en="Online Table Booking" data-bn="অনলাইন টেবিল বুকিং" class="text-xl font-semibold mb-3 text-red-600">
-                            Online Table Booking
-                        </h3>
-                        <p data-en="Now you can book your table online quickly and easily through our website." 
-                        data-bn="এখন আপনি আমাদের ওয়েবসাইটের মাধ্যমে দ্রুত এবং সহজে টেবিল অনলাইনে বুক করতে পারেন।"
-                        class="text-gray-700 text-sm">
-                            Now you can book your table online quickly and easily through our website.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gradient-to-r from-red-500 via-pink-500 to-red-600 text-white py-16 px-6">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-
-                <div class="text-center md:text-left">
-                    <h2 data-en="Upcoming Events" data-bn="আসন্ন ইভেন্ট" class="text-4xl font-extrabold mb-4 tracking-wide">
-                        Upcoming Events
-                    </h2>
-                    <p data-en="Join us for exclusive restaurant events, live music nights, seasonal specials & more!" 
-                    data-bn="এক্সক্লুসিভ রেস্টুরেন্ট ইভেন্ট, লাইভ মিউজিক নাইট, মৌসুমী বিশেষ ও আরও অনেক কিছুতে আমাদের সঙ্গে যোগ দিন!" 
-                    class="text-lg max-w-md">
-                        Join us for exclusive restaurant events, live music nights, seasonal specials & more!
-                    </p>
-                </div>
-
-                <!-- Button group: stack on mobile, side by side on md+ -->
-                <div class="flex flex-col sm:flex-row gap-4 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start">
-                    <button data-en="View All Events" data-bn="সকল ইভেন্ট দেখুন"
-                            class="bg-white text-red-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition w-full sm:w-auto">
-                        View All Events
-                    </button>
-                    <button data-en="Book Your Spot" data-bn="আপনার জায়গা বুক করুন"
-                            class="border border-white px-6 py-3 rounded hover:bg-white hover:text-red-600 transition w-full sm:w-auto">
-                        Book Your Spot
-                    </button>
-                </div>
-
-            </div>
-        </section>
 
 
 
@@ -940,7 +812,7 @@
                             Phone: +8801345932339
                         </p>
                         <p data-en="Email: info@restaurant.com" data-bn="ইমেল: info@restaurant.com" class="text-gray-400 text-sm">
-                            Email: amore@gmail.com
+                            Email: amore.jolshiri@gmail.com
                         </p>
                     </div>
                 </div>

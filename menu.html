@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 data-en="Our Menu"
+                data-bn="আমাদের মেনু" class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">Our Menu</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                <!-- Juice -->
+                <!-- Lemon Mint -->
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/lemo-mint.jpg" alt="Lemon Mint" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"
+                        data-en="Lemon Mint"
+                        data-bn="লেবু পুদিনা">
+                        Lemon Mint
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3"
+                        data-en="Refreshing mint blended with lemon juice."
+                        data-bn="লেবুর রসের সাথে সতেজ পুদিনার মিশ্রণ।">
+                        Refreshing mint blended with lemon juice.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Lemonade -->
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Lemonade-Juice.jpg" alt="Lemonade Juice" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"
+                        data-en="Lemonade Juice"
+                        data-bn="লেমনেড জুস">
+                        Lemonade Juice
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3"
+                        data-en="Classic lemonade with a hint of sweetness."
+                        data-bn="হালকা মিষ্টি স্বাদের ক্লাসিক লেমনেড।">
+                        Classic lemonade with a hint of sweetness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tea -->
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Tea.jpg" alt="Tea" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"
+                        data-en="Tea"
+                        data-bn="চা">
+                        Tea
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3"
+                        data-en="Hot brewed tea, perfect for relaxing."
+                        data-bn="আরাম পাওয়ার জন্য গরম চা।">
+                        Hot brewed tea, perfect for relaxing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Coffee -->
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Coffee.jpg" alt="Coffee" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"
+                        data-en="Coffee"
+                        data-bn="কফি">
+                        Coffee
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3"
+                        data-en="Rich aromatic coffee for energy boost."
+                        data-bn="শক্তি বাড়ানোর জন্য সুগন্ধি কফি।">
+                        Rich aromatic coffee for energy boost.
+                    </p>
+                </div>
+            </div>
+
+                <!-- Snacks Items -->
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Chicken-Lollipop.jpg" alt="Chicken Lollipop" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Chicken Lollipop" data-bn="চিকেন ললিপপ" class="text-xl font-semibold text-gray-800 mb-2">Chicken Lollipop</h3>
+                    <p data-en="Crispy fried chicken drumettes with spicy coating." data-bn="মসলাদার কোটিংসহ মুচমুচে ভাজা চিকেন।" class="text-gray-600 text-sm mb-3">
+                        Crispy fried chicken drumettes with spicy coating.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Kolija-Singara.jpg" alt="Kolija Singara" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Kolija Singara" data-bn="কলিজা সিঙ্গারা" class="text-xl font-semibold text-gray-800 mb-2">Kolija Singara</h3>
+                    <p data-en="Pastry filled with flavorful liver mixture." data-bn="সুস্বাদু কলিজা দিয়ে ভরা পেস্ট্রি।" class="text-gray-600 text-sm mb-3">
+                        Pastry filled with flavorful liver mixture.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Vegetable-Singara.jpg" alt="Vegetable Singara" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Vegetable Singara" data-bn="সবজি সিঙ্গারা" class="text-xl font-semibold text-gray-800 mb-2">Vegetable Singara</h3>
+                    <p data-en="Crispy triangular pastry filled with seasoned vegetables." data-bn="মসলাদার সবজি দিয়ে ভরা ক্রিস্পি ত্রিভুজাকার পেস্ট্রি।" class="text-gray-600 text-sm mb-3">
+                        Crispy triangular pastry filled with seasoned vegetables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Somucha.png" alt="Somucha" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Somucha" data-bn="সমুচা" class="text-xl font-semibold text-gray-800 mb-2">Somucha</h3>
+                    <p data-en="Delicious stuffed pastries with savory filling." data-bn="সুস্বাদু ভরা পেস্ট্রি।" class="text-gray-600 text-sm mb-3">
+                        Delicious stuffed pastries with savory filling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Spring-Roll.jpg" alt="Spring Roll" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Spring Roll" data-bn="স্প্রিং রোল" class="text-xl font-semibold text-gray-800 mb-2">Spring Roll</h3>
+                    <p data-en="Crispy rolls with mixed vegetable filling." data-bn="মিশ্র সবজি দিয়ে ভরা ক্রিস্পি রোল।" class="text-gray-600 text-sm mb-3">
+                        Crispy rolls with mixed vegetable filling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Vegetable-Tempora.jpg" alt="Vegetable Tempora" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Vegetable Tempora" data-bn="সবজি টেম্পোরা" class="text-xl font-semibold text-gray-800 mb-2">Vegetable Tempora</h3>
+                    <p data-en="Lightly battered and deep-fried mixed vegetables served crispy." data-bn="হালকা ব্যাটার দিয়ে ভাজা মিশ্র সবজি।" class="text-gray-600 text-sm mb-3">
+                        Lightly battered and deep-fried mixed vegetables served crispy.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Cauliflower-Cream-Onion-Rings.avif" alt="Cauliflower Cream + Onion Rings" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Cauliflower Cream and Onion Rings" data-bn="কফলাওয়ার ক্রিম এবং অনিয়ন রিং" class="text-xl font-semibold text-gray-800 mb-2">Cauliflower Cream and Onion Rings</h3>
+                    <p data-en="Crispy cauliflower bites served with creamy sauce and golden onion rings." data-bn="ক্রিমি সস এবং সোনালি অনিয়ন রিং সহ ক্রিস্পি ফুলকপি।" class="text-gray-600 text-sm mb-3">
+                        Crispy cauliflower bites served with creamy sauce and golden onion rings.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Doi-Fuchka.jpg" alt="Doi Fuchka" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Doi Fuchka" data-bn="দই ফুচকা" class="text-xl font-semibold text-gray-800 mb-2">Doi Fuchka</h3>
+                    <p data-en="Crispy fuchka filled with spicy mash and topped with sweet yogurt." data-bn="মশলাদার ভরা ফুচকা এবং মিষ্টি দই দিয়ে সাজানো।" class="text-gray-600 text-sm mb-3">
+                        Crispy fuchka filled with spicy mash and topped with sweet yogurt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Fuchka.jpg" alt="Fuchka" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Fuchka" data-bn="ফুচকা" class="text-xl font-semibold text-gray-800 mb-2">Fuchka</h3>
+                    <p data-en="Popular street snack filled with spicy mashed potato and tamarind water." data-bn="মশলাদার আলু এবং তেঁতুলের জল দিয়ে ভরা জনপ্রিয় স্ট্রিট স্ন্যাক।" class="text-gray-600 text-sm mb-3">
+                        Popular street snack filled with spicy mashed potato and tamarind water.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="images/Noodols.jpg" alt="Noodles" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-5">
+                    <h3 data-en="Noodles" data-bn="নুডলস" class="text-xl font-semibold text-gray-800 mb-2">Noodles</h3>
+                    <p data-en="Stir-fried noodles with vegetables and sauce." data-bn="সবজি এবং সস সহ ভাজা নুডলস।" class="text-gray-600 text-sm mb-3">
+                        Stir-fried noodles with vegetables and sauce.
+                    </p>
+                </div>
+            </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Chicken-Fry.jpg" alt="Chicken Fry" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Chicken Fry (Crispy / Thai)" data-bn="চিকেন ফ্রাই (ক্রিস্পি / থাই)" class="text-xl font-semibold text-gray-800 mb-2">Chicken Fry (Crispy / Thai)</h3>
+                        <p data-en="Deep-fried chicken with crispy or Thai-style flavor." data-bn="ক্রিস্পি বা থাই স্টাইল ফ্লেভারের ডিপ ফ্রাই চিকেন।" class="text-gray-600 text-sm mb-3">
+                            Deep-fried chicken with crispy or Thai-style flavor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Garlic-Mashrom.jpg" alt="Garlic Mushroom" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Garlic Mushroom" data-bn="গার্লিক মাশরুম" class="text-xl font-semibold text-gray-800 mb-2">Garlic Mushroom</h3>
+                        <p data-en="Sautéed mushrooms tossed with garlic and herbs." data-bn="রসুন ও হার্বস দিয়ে সেঁকা মাশরুম।" class="text-gray-600 text-sm mb-3">
+                            Sautéed mushrooms tossed with garlic and herbs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Mozzarella-Stick.jpg" alt="Mozzarella Stick" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Mozzarella Stick" data-bn="মোজারেলা স্টিক" class="text-xl font-semibold text-gray-800 mb-2">Mozzarella Stick</h3>
+                        <p data-en="Crispy fried sticks filled with melted mozzarella." data-bn="গলানো মোজারেলা দিয়ে ভরা ক্রিস্পি ফ্রাই স্টিক।" class="text-gray-600 text-sm mb-3">
+                            Crispy fried sticks filled with melted mozzarella.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Chola-Muri.jpg" alt="Chola Muri" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Chola Muri" data-bn="ছোলা মুড়ি" class="text-xl font-semibold text-gray-800 mb-2">Chola Muri</h3>
+                        <p data-en="Traditional spicy chickpea snack (Morning only)." data-bn="পরম্পরাগত মশলাদার ছোলা স্ন্যাক (শুধু সকালেই)।" class="text-gray-600 text-sm mb-3">
+                            Traditional spicy chickpea snack (Morning only).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Bread-Butter.jpg" alt="Bread Butter" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Bread Butter" data-bn="ব্রেড বাটার" class="text-xl font-semibold text-gray-800 mb-2">Bread Butter</h3>
+                        <p data-en="Soft bread slices served with butter (Morning only)." data-bn="নরম ব্রেডের স্লাইস বাটারের সঙ্গে (শুধু সকালেই)।" class="text-gray-600 text-sm mb-3">
+                            Soft bread slices served with butter (Morning only).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Meat-Box..jpg" alt="Meat Box" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Meat Box" data-bn="মিট বক্স" class="text-xl font-semibold text-gray-800 mb-2">Meat Box</h3>
+                        <p data-en="Assorted meat items served in a combo box." data-bn="কম্বো বক্সে পরিবেশিত বিভিন্ন ধরনের মাংস।" class="text-gray-600 text-sm mb-3">
+                            Assorted meat items served in a combo box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Fry-Platter..jpg" alt="Fry Platter" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Fry Platter" data-bn="ফ্রাই প্ল্যাটার" class="text-xl font-semibold text-gray-800 mb-2">Fry Platter</h3>
+                        <p data-en="Mixed fried snacks served together." data-bn="মিশ্রিত ভাজা স্ন্যাক একসাথে পরিবেশিত।" class="text-gray-600 text-sm mb-3">
+                            Mixed fried snacks served together.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Frience-Fries.jpg" alt="French Fries" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="French Fries" data-bn="ফ্রেঞ্চ ফ্রাই" class="text-xl font-semibold text-gray-800 mb-2">French Fries</h3>
+                        <p data-en="Golden crispy potato fries." data-bn="সোনালি ক্রিস্পি আলুর ফ্রাই।" class="text-gray-600 text-sm mb-3">
+                            Golden crispy potato fries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Pizza.jpg" alt="Pizza" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Pizza" data-bn="পিজা" class="text-xl font-semibold text-gray-800 mb-2">Pizza</h3>
+                        <p data-en="Cheesy pizza with assorted toppings." data-bn="বিভিন্ন টপিংসহ চিজি পিজা।" class="text-gray-600 text-sm mb-3">
+                            Cheesy pizza with assorted toppings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Burger.jpg" alt="Burger" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Burger" data-bn="বার্গার" class="text-xl font-semibold text-gray-800 mb-2">Burger</h3>
+                        <p data-en="Juicy burger with fresh bun and fillings." data-bn="সফট বান এবং ফিলিংসহ রসালো বার্গার।" class="text-gray-600 text-sm mb-3">
+                            Juicy burger with fresh bun and fillings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Tanduri.jpg" alt="Tandoori" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Tandoori" data-bn="তন্দুরি" class="text-xl font-semibold text-gray-800 mb-2">Tandoori</h3>
+                        <p data-en="Spicy tandoori-style grilled items." data-bn="মশলাদার তন্দুরি স্টাইল গ্রিলড আইটেম।" class="text-gray-600 text-sm mb-3">
+                            Spicy tandoori-style grilled items.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Kabab.jpg" alt="Kabab" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Kabab (Different Types)" data-bn="কাবাব (বিভিন্ন প্রকার)" class="text-xl font-semibold text-gray-800 mb-2">Kabab (Different Types)</h3>
+                        <p data-en="Assorted kebabs prepared with special spices." data-bn="বিশেষ মসলা দিয়ে প্রস্তুত বিভিন্ন ধরনের কাবাব।" class="text-gray-600 text-sm mb-3">
+                            Assorted kebabs prepared with special spices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Pasta.png" alt="Pasta" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Pasta" data-bn="পাস্তা" class="text-xl font-semibold text-gray-800 mb-2">Pasta</h3>
+                        <p data-en="Creamy or spicy pasta cooked to perfection." data-bn="সঠিকভাবে রান্না করা ক্রিমি বা মশলাদার পাস্তা।" class="text-gray-600 text-sm mb-3">
+                            Creamy or spicy pasta cooked to perfection.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Continue adding all other snack items in the same format -->
+                <!-- Vegetable Tempora, Cauliflower Cream + Onion Rings, Doi Fuchka, Fuchka, Noodles, Chicken Fry, Garlic Mushroom, Mozzarella Stick, Chola Muri, Bread Butter, Meat Box, Fry Platter, French Fries, Pizza, Burger, Tanduri, Kabab, Pasta -->
+
+                <!-- Lunch / Dinner Items -->
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Chinese Platter.jpg" alt="Chinese Platter" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Chinese Platter" data-bn="চাইনিজ প্ল্যাটার" class="text-xl font-semibold text-gray-800 mb-2">Chinese Platter</h3>
+                        <p data-en="Fried Rice, Chinese Vegetable, Chicken Fry, Salad, Drinks (Small)" data-bn="ভাজা ভাত, চাইনিজ সবজি, চিকেন ফ্রাই, সালাদ, ড্রিংকস (ছোট)" class="text-gray-600 text-sm mb-3">
+                            Fried Rice, Chinese Vegetable, Chicken Fry, Salad, Drinks (Small)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Deshi-Platter.png" alt="Deshi Platter" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Deshi Platter" data-bn="দেশি প্ল্যাটার" class="text-xl font-semibold text-gray-800 mb-2">Deshi Platter</h3>
+                        <p data-en="Khichuri, Potato Fries Crispy, Egg Curry, Salad, Drinks (Small)" data-bn="খিচুড়ি, ক্রিস্পি আলুর ফ্রাই, ডিমের কারি, সালাদ, ড্রিংকস (ছোট)" class="text-gray-600 text-sm mb-3">
+                            Khichuri, Potato Fries Crispy, Egg Curry, Salad, Drinks (Small)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="images/Tehari.jpg" alt="Tehari" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-5">
+                        <h3 data-en="Tehari" data-bn="তেহারি" class="text-xl font-semibold text-gray-800 mb-2">Tehari</h3>
+                        <p data-en="Chicken / Beef Tehari, Salad, Drinks" data-bn="চিকেন / বিফ তেহারি, সালাদ, ড্রিংকস" class="text-gray-600 text-sm mb-3">
+                            Chicken / Beef Tehari, Salad, Drinks
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- More Button (Responsive) -->
+            <!-- <div class="mt-10 flex justify-center md:justify-end">
+                <a href="menu.html" 
+                class="flex items-center gap-2 px-5 py-2 bg-red-700 hover:bg-blue-700 text-white font-semibold rounded-2xl shadow-md transition"
+                data-en="More" 
+                data-bn="আরও">
+                    More
+                    <span class="text-xl">→</span>
+                </a>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+        <a href="#top" id="backToTopBtn"
+        data-en="↑ Top" data-bn="↑ উপরে"
+        class="hidden fixed bottom-6 right-6 bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 transition-all z-50">
+            ↑ Top
+        </a>
+
+        <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove("hidden");
+            } else {
+                backToTopBtn.classList.add("hidden");
+            }
+        });
+    </script>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${lang}`);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
